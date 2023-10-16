@@ -41,8 +41,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/mitchHartigan/mb-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -70,7 +69,7 @@ const config = {
             label: "Docs",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/mitchHartigan/mb-docs",
             label: "GitHub",
             position: "right",
           },
