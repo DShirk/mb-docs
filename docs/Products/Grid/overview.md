@@ -51,3 +51,34 @@ For instance, imagine we have some grid data describing the toxicity of certain 
 Which could be rendered into a grid of cells like:
 
 ![fish mercury levels grid](/img/fish-cell-example.png)
+
+A simplified representation of what the data would look like for this example:
+
+```js
+const data = {
+  type: "criteria",
+  body: "Fish",
+  children: [
+    {
+      type: "criteria",
+      body: "Salmon",
+      children: [
+        {
+          type: "conclusion",
+          body: "Low levels of mercury (0.014 ppm)",
+        },
+      ],
+    },
+    {
+      type: "criteria",
+      body: "Tuna",
+      children: [
+        {
+          type: "conclusion",
+          body: "High levels of mercury (0.126 ppm)",
+        },
+      ],
+    },
+  ],
+};
+```
