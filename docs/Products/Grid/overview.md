@@ -16,7 +16,7 @@ Criteria objects are nested inside each other, eventually leading to a conclusio
 
 ### Data Model Rules and Constraints
 
-- Criteria objects can be parents to other criteria objects or to conclusion objects. Criteria objects can have **both** criteria objects and conclusion objects as children.
+- Criteria objects can be parents to other criteria objects or to conclusion objects. Criteria objects can have **both** criteria objects and conclusion objects as children, meaning criteria objects and conclusion objects can be siblings.
 
 - Conclusion objects can have siblings, but no children. Conclusions are meant to be definitive answers to a specific set of criteria.
 
