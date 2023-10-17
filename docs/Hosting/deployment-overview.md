@@ -5,7 +5,13 @@ and back end services are currently deployed on Mitch's Netlify and AWS account(
 
 :::note Access
 
-All mortgagebanking code is hosted in private repositories that require access rights. You must be signed in to Github and have been granted permission to view the project folders.
+All mortgagebanking code is currently hosted in private repositories that require access rights. You must be signed in to Github and have been granted permission to view the project folders.
+
+:::
+
+:::danger
+
+Only Mitch has access rights at the time of writing. Granting David repo access rights should be first priority.
 
 :::
 
