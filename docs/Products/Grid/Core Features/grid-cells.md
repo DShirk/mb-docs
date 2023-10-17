@@ -1,4 +1,8 @@
-# Grid Cells
+---
+sidebar_position: 3
+---
+
+# Cells
 
 Data following these rules can be displayed as a grid of cells in our web UI. Cells are directly representative of criteria or conclusion objects. The position of criteria/conclusion cells in the grid is representative of the position of those criteria/conclusion cell in the hierarchical data.
 
