@@ -4,11 +4,11 @@ The Grid mainly functions as a way to render unstructured data into a cell-based
 
 ## Master Data Set
 
-All company insights will be stored in one master dataset. This dataset will be editable via the Grid UI, and should serve as the sole source of truth for our data. In effect, the master data set is the parent of all other datasets packaged and distributed.
+All company insights will be stored in one master dataset. This dataset will be editable via the Grid UI, and should serve as the sole source of truth for our data. In effect, the master data set is the parent of all other datasets to be packaged and distributed.
 
 ## Instances
 
-A Grid instance is a container that holds an unstructured dataset and metadata about that dataset. The master dataset will exist as a Grid instance. The metadata for a Grid instance includes:
+A Grid instance is a container that holds an unstructured dataset and metadata about that dataset. The master dataset exists as a Grid instance. The metadata for a Grid instance includes:
 
 - A title, description, etc
 - Version history for all changes made to that dataset
