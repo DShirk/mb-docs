@@ -11,7 +11,7 @@ All mortgagebanking code is currently hosted in private repositories that requir
 
 :::danger
 
-Only Mitch has access rights at the time of writing. Granting David repo access rights should be first priority.
+Only Mitch has up-to-date access to the project code at the time of writing.
 
 :::
 
