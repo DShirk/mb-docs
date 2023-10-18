@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Grid Rendering
 
 The grid cell placement logic is able to render hierarchical objects into a [row of cells](./grid-cells.md).

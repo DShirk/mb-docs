@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Grid Instances
 
 The Grid mainly functions as a way to render unstructured data into a cell-based UI editor. One of the main use cases of the Grid is to be able to package and distribute this data, which will be facilitated through Grid instances.
