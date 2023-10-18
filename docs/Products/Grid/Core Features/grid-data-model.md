@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Data Model
 
-Company insights are stored as non-structured data in MongoDB. The data is structured as a series of **criteria** leading to specific **conclusions**. Or, a hierarchical set of **questions**, leading to an **answer** or **set of answers**. Both criteria and conclusions exist as objects.
+Company insights are stored as NoSQL data in MongoDB. The data is structured as a series of **criteria** leading to specific **conclusions**. Or, a hierarchical set of **questions**, leading to an **answer** or **set of answers**. Both criteria and conclusions exist as objects.
 
 ### Data Hierarchy
 

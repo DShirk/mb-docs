@@ -17,7 +17,7 @@ For instance, this grid data would produce two rows of cells:
   ];
 ```
 
-## Canonical Grid Data
+## Canonical Data
 
 In order to render the rows of cells for the grid, we must do some conversion to a more representative data format. We do this by using a 2D array to store and render the grid cells from. The grid data is recursively parsed, with each object being placed into it's correct position in the 2D array. This representation of the grid data is referred to as the **canonical grid data**.
 
@@ -86,3 +86,16 @@ const canonicalData = [
 
 ];
 ```
+## Rendering Canonical Data
+
+### Cell Coordinates
+Each cell is also assigned a set of coordinates when it is parsed into the canonical data array. These coordinates represent the starting and stopping position of the cell within it's column. Coordinates are added as a property to each cell object as:
+
+```js
+  const cell = {
+    type: "criteria",
+    coords: [1, 3]
+  }
+```
+
+To render our canonical data on our front-end, we create a `<Cell />` element for each cell object in the canonical data. Each `<Cell />` is then loaded onto the page using [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout).

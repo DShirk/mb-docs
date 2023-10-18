@@ -9,3 +9,4 @@ A centered modal will be needed to manage all of the cell editing actions, inclu
 - viewing, re-ordering, and editing (click takes you to edit modal) conclusions
 - viewing version history for currently selected cell
 - moving to parent cell with a back button
+- edit the tags applied to the cell
