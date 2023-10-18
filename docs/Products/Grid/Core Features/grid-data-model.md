@@ -12,7 +12,7 @@ Criteria objects are nested inside each other, eventually leading to a conclusio
 
 ![Criteria and conclusions relationship](/img/criteria-conclusions-relationship.png)
 
-Here's a simplified representation of what the data would look like for the above example:
+A simplified representation of what the hierarchical data would look like for the above example:
 
 ```js
 const data = {
@@ -36,6 +36,6 @@ const data = {
 
 - Criteria objects are not required to have children. Questions should be able to exist without answers.
 
-- Both criteria and conclusion objects should only have a single parent. Eg, branches can split, but should not be rejoined.
+- Both criteria and conclusion objects should only have a single parent. In other words, branches of the tree/hierarchy can be split but should not be rejoined.
 
-`* This constraint has the potential to be removed if it proves limiting. However, a great deal of cell placement logic relies on this assumption. Further consideration would be needed.`
+`*` This constraint has the potential to be removed if it proves limiting. However, a great deal of cell placement logic relies on this definition. Further consideration would be required.

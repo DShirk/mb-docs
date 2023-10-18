@@ -3,7 +3,7 @@
 The mortgagebanking site consists of a React front-end and two seperate Node/Express.js backends. Both the front
 and back end services are currently deployed on Mitch's Netlify and AWS account(s).
 
-:::note Access
+<!-- :::note Access
 
 All mortgagebanking code is currently hosted in private repositories that require access rights. You must be signed in to Github and have been granted permission to view the project folders.
 
@@ -13,7 +13,7 @@ All mortgagebanking code is currently hosted in private repositories that requir
 
 Only Mitch has up-to-date access to the project code at the time of writing.
 
-:::
+::: -->
 
 # Front End
 

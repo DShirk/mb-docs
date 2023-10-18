@@ -8,7 +8,7 @@ All company insights will be stored in one master dataset. This dataset will be 
 
 ## Instances
 
-A Grid instance is a container that holds an unstructured dataset and metadata about that dataset. The master dataset exists as a Grid instance. The metadata for a Grid instance includes:
+A Grid instance is a container that holds an unstructured dataset and metadata about that dataset. The master dataset exists as a Grid instance which other instances can be created from. The metadata for a Grid instance includes:
 
 - A title, description, etc
 - Version history for all changes made to that dataset
@@ -17,4 +17,4 @@ A Grid instance is a container that holds an unstructured dataset and metadata a
 
 ## Creating New Instances
 
-To package and distribute data from the master dataset, a new Grid instance will be formed to contain that data. Grid instances can be created from other instances by copying over parts of their dataset. This allows for editing the data in the new Grid instance without affecting the original instance it was copied from.
+To package and distribute data from the master dataset, a new Grid instance can be formed to contain that data. Grid instances can be created from other instances by copying over parts of their dataset. This allows for editing the data in the new Grid instance without affecting the original instance it was copied from.
