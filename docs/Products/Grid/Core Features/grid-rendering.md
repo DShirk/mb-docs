@@ -66,7 +66,7 @@ const gridData = [
 The gridData here is the same data as above placed into an array. It represents a single row.
 :::
 
-Now formatted as canonical data:
+Now parsed into canonical data:
 
 ```js
 const canonicalData = [
@@ -81,7 +81,7 @@ const canonicalData = [
 
   [
     { type: "conclusion", body: "Low levels of mercury (0.014 ppm)" },
-    { type: "conclusion", body: "High levels of mercury(0.126 ppm)" },
+    { type: "conclusion", body: "High levels of mercury (0.126 ppm)" },
   ],
 
 ];
