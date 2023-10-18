@@ -26,7 +26,7 @@ const data = {
 
 ### Data Model Rules and Constraints
 
-- Criteria objects can be parents to other criteria objects or to conclusion objects. Criteria objects can have **both** criteria objects and conclusion objects as children. Criteria objects and conclusion objects can be siblings.
+- Criteria objects can be parents to other criteria objects or to conclusion objects. Criteria objects can have **both** criteria objects and conclusion objects as children. Ie, Criteria objects and conclusion objects can be siblings.
 
 - Conclusion objects can have siblings, but not children. Conclusions are meant to be conclusive; to be a definitive answer or set of answers to a specific set of criteria.`*`
 
@@ -38,4 +38,4 @@ const data = {
 
 - Both criteria and conclusion objects should only have a single parent. In other words, branches of the tree/hierarchy can be split but should not be rejoined.
 
-`*` This constraint has the potential to be removed if it proves limiting. However, a great deal of cell placement logic relies on this definition. Further consideration would be required.
+`*` These constraints have the potential to be removed if they prove limiting. However, a great deal of cell placement logic relies on this definition. Further consideration would be required.
