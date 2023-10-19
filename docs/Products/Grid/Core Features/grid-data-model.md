@@ -6,16 +6,15 @@ sidebar_position: 2
 
 Company insights are stored as NoSQL data in MongoDB. The data is structured as a series of **criteria** leading to specific **conclusions**. Or, a hierarchical set of **questions**, leading to an **answer** or **set of answers**. Both criteria and conclusions exist as objects.
 
+Any NoSQL object that adheres to this data model can represent a single row or column in the grid. We call these objects **Hierarchy Data**.
 
-Criteria objects that adhere to this data model represent a single row in the grid. They are called **Hierarchy Data Rows**, one of the grid's [Data Types](./grid-data-types.md).
+### Hierarchy Data
 
-### Hierarchy Data Rows
-
-Criteria objects are nested inside each other, eventually leading to a conclusion object or set of conclusion objects as their children. This is represented as a series of branching decisions (criteria) in a tree data structure, leading to the answers (conclusions) as the leaves of the tree branches.
+Hierarchy Data is made of nested criteria objects, eventually leading to a conclusion object or set of conclusion objects as their children. This is represented as a series of branching decisions (criteria) in a **tree data structure**, leading to the answers (conclusions) as the 'leaves' of the tree branches.
 
 ![Criteria and conclusions relationship](/img/criteria-conclusions-relationship.png)
 
-A simplified representation of what the hierarchical data would look like for the above example:
+A simplified representation of what the Hierarchy Data would look like for the above example:
 
 ```js
 const data = {

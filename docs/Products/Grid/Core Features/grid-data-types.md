@@ -5,15 +5,23 @@ sidebar_position: 3
 # Grid Data Types
 There are 3 main data types used to facilitate the rendering of the grid in our UI:
 
-- **Hierarchy Data Grids** (made up of **Hierarchy Data Rows**)
-- **Canonical Data Grids** (made up of **Canonical Data Rows**)
+- [Hierarchy Data Grids](./grid-data-types#hierarchy-data-grids)
+- [Canonical Data Grids](./grid-data-types#canonical-data-grids)
 - **Viewport Data Grids**
+
+Hierarchy Data Grid --> Canonical Data Grid --> Viewport Data Grid
 
 ## Hierarchy Data Grids
 
-**Hierarchy Data Grids** are a data type that are formatted as an 1-dimensional array of hierarchical objects, where each entry in the array is a **Hierarchy Data Row**.
+**Hierarchy Data Grids** are a data type that are formatted as a 1-dimensional array of hierarchical objects, where each entry in the array is a **Hierarchy Data Row**.
 
-**Hierarchy Data Rows** are objects that conform to our [data model](./grid-data-model.md), made up of nested criteria and/or conclusion objects.
+**Hierarchy Data Rows** are Hierarchy Data (objects that conform to our [data model](./grid-data-model.md)), made up of nested criteria and/or conclusion objects.
+
+:::note Naming
+[Hierarchy Data](./grid-data-model.md) and Hierarchy Data Rows are the same thing in the context of the grid. [Hierarchy Data](./grid-data-model.md) can be interpreted as either a row or a column. But, the default orientation is where [Hierarchy Data](./grid-data-model.md) represents a row in the grid, so we use 'Hierarchy Data Row' as our naming convention for this data in the context of the grid. To avoid having multiple names for the same type of data, we'll always consider [Hierarchy Data](./grid-data-model.md) to be a row, and we'll always refer to it as a 'Hierarchy Data Row' in the context of the grid.
+
+For example, if the grid is rotated to use a flipped x and y axis, we will consider all of the rows in the grid to be inverted rows instead of considering them as columns.
+:::
 
 For instance, this Hierarchy Data Grid would produce two rows of cells:
 
@@ -24,16 +32,9 @@ For instance, this Hierarchy Data Grid would produce two rows of cells:
   ];
 ```
 
-We use Hierarchy Data Grids to store data for a particular [Grid Instance](./grid-instances.md). This format preserves the nested hierarchy structure of the criteria and conclusions objects.
+We use Hierarchy Data Grids to store data in our database for a particular [Grid Instance](./grid-instances.md). This format preserves the nested hierarchy structure of the criteria and conclusions objects.
 
-## Canonical Data Grids
-
-In order to render the Data Grid in our UI, we must do some conversion to a more representational data format. We do this by using a 3-dimensional array. A 3-dimensional array of cell objects with no nesting is easily readable as a grid, compared to a 1-dimensional array of nested cell objects. This data type is referred to as a **Canonical Data Grid**, where each entry in the 3-dimensional array is a **Canonical Data Row**.
-
-
-Each **Hierarchy Data Row** from a **Hierarchy Data Grid** is parsed into a **Canonical Data Row** as a 2-dimensional array. Each element in the **Canonical Data Row** array represents a column.
-
-For instance, here's an example of some data we might want to load into a [Grid Instance](./grid-instances.md). Since this fishData object conforms to our [data model](./grid-data-model.md), it is considered a **Hierarchy Data Row**.
+For instance, here's an example of some data we might want to load into a [Grid Instance](./grid-instances.md). Since this `fishData` object conforms to our [data model](./grid-data-model.md), it is considered a **Hierarchy Data Row**.
 
 ```js
 const fishData = {
@@ -76,12 +77,22 @@ const hierarchyDataGrid = [
 ```
 To summarize:
 
-- A **Hierarchy Data Grid** is an array containing hierarchical objects adhering to our [data model](./grid-data-model.md), like the fishData provided.
+- A **Hierarchy Data Grid** is an array containing hierarchical objects adhering to our [data model](./grid-data-model.md), like the `fishData` provided.
 - **Hierarchy Data Grids** are used to store the data for a particular grid, but are not used to render the grid in the UI. That's the purpose of the **Canonical Data Grid**.
 
-To create a **Canonical Data Grid** for this **Hierarchy Data Grid**, we iterate over every row (every **Hierarchy Data Row** in the hierarchyDataGrid array) and create a **Canonical Data Row** array from it.
+## Canonical Data Grids
 
-Here's what our fishData **Hierarchy Data Row** would look like converted into a **Canonical Data Row**:
+In order to render the **Hierarchy Data Grid** in our UI, we must do some conversion to a more representational data format. For the purposes of rendering to the UI, we use a 3-dimensional array of cell objects without nesting. This data type is referred to as a **Canonical Data Grid**, where each entry in the 3-dimensional array is a **Canonical Data Row**.
+
+Each **Hierarchy Data Row** from a **Hierarchy Data Grid** is parsed into a **Canonical Data Row** to create a **Canonical Data Grid**.
+
+- Each element in the **Canonical Data Grid** array represents a row.
+- Each element in the **Canonical Data Row** array represents a column within that row.
+
+**Canonical Data Grids** are not meant to be stored, but rather created at runtime on the front-end from a **Hierarchy Data Grid**.
+
+
+Here's what our `fishData` **Hierarchy Data Row** would look like converted into a **Canonical Data Row**:
 
 ```js
 const fishCanonicalDataRow = [
@@ -115,9 +126,8 @@ const canonicalDataGrid = [
 
 To summarize:
 
-- A canonical data grid is a 3D array containing canonical data row arrays. Each element in the canonical data grid array represents a **row**.
-- A canonical data row is a 2D array containing column data arrays. Each element in a canonical data row array represents a **column**.
-
+- A **Canonical Data Grid** is a 3D array containing **Canonical Data Row** arrays. Each element in the **Canonical Data Grid** array represents a row.
+- A **Canonical Data Row** is a 2D array containing arrays of non-nested cell objects. Each element in a **Canonical Data Row** array represents a **column** in that particular row.
 
 ## Rendering Canonical Data
 
