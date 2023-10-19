@@ -79,7 +79,7 @@ To summarize:
 
 - A **Hierarchy Data Grid** is an array of Hierarchy Data Rows, used to store hierarchy data for a [Grid Instance](./grid-instances.md).
 - A **Hierarchy Data Row** is Hierarchy Data that conforms to our [data model](./grid-data-model.md), like the `fishData` provided.
-- **Hierarchy Data Grids** are used to store the data for a particular grid, but are not used to render the grid in the UI. That's the purpose of the **Canonical Data Grid**.
+- **Hierarchy Data Grids** are used to store the data for a particular grid, but are not used to render the grid in the UI. That's the purpose of the **Canonical Data Grid** and **Viewport Data Grid**.
 
 ## Canonical Data Grids
 
@@ -130,3 +130,9 @@ To summarize:
 - A **Canonical Data Grid** is a 3D array containing **Canonical Data Row** arrays. Each element in the **Canonical Data Grid** array represents a row.
 - A **Canonical Data Row** is a 2D array containing arrays of non-nested cell objects. Each element in a **Canonical Data Row** array represents a **column** in that particular row.
 
+
+## Viewport Data Grid
+ 
+The grid is rendered inside a [scrollable viewport](./grid-rendering.md) in our front end UI. All of the Canonical Data Grid is not displayed as cells at once, but instead a small window (viewport) referencing part of that data. Viewport Data Grids are just slices of a Canonical Data Grid according to the current scroll position.
+
+The Viewport Data Grid is the data actually rendered into our CSS Grid Component.

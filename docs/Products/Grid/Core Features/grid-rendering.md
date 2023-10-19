@@ -5,7 +5,9 @@ To load a Grid Instance in our UI, we complete the following steps:
 - Retrieve Hierarchy Data Grid from our MongoDB backend.
 - Parse the Hierarchy Data Grid into a Canonical Data Grid.
 - Generate coordinates for each cell in the Canonical Data Grid.
-- Iteratively render each cell from the Canonical Data Grid into a [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) container element on the page.
+- Generate a Viewport Data Grid from the Canonical Data Grid based on the users' scroll position.
+- Generate relative coordinates for each cell in the Viewport Data Grid.
+- Iteratively render each cell from the Viewport Data Grid into a [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) container element on the page.
 
 ## Rendering Canonical Data
 
