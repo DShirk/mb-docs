@@ -1,23 +1,24 @@
 ---
 sidebar_position: 3
 ---
+
 # Grid Data Types
 There are 3 main data types used to facilitate the rendering of the grid in our UI:
 
-- Hierarchy Data Grids
-- Canonical Data Grids
-- Viewport Data Grids
+- **Hierarchy Data Grids** (made up of **Hierarchy Data Rows**)
+- **Canonical Data Grids** (made up of **Canonical Data Rows**)
+- **Viewport Data Grids**
 
 ## Hierarchy Data Grids
 
 **Hierarchy Data Grids** are a data type that are formatted as an 1-dimensional array of hierarchical objects, where each entry in the array is a **Hierarchy Data Row**.
 
-**Hierarchy Data Rows** are objects that conform to our data model, made up of nested criteria and/or conclusion objects.
+**Hierarchy Data Rows** are objects that conform to our [data model](./grid-data-model.md), made up of nested criteria and/or conclusion objects.
 
 For instance, this Hierarchy Data Grid would produce two rows of cells:
 
 ```js
-  const dataGrid = [
+  const hierarchyDataGrid = [
     { type: "criteria", children: [...] },
     { type: "criteria", children: [...] },
   ];
@@ -27,11 +28,12 @@ We use Hierarchy Data Grids to store data for a particular [Grid Instance](./gri
 
 ## Canonical Data Grids
 
-In order to render the Data Grid in our UI, we must do some conversion to a more representational data format. We do this by using a 3-dimensional array to store and render the grid cells from. A 3-dimensional array of cell objects with no nesting is much more readable as an actual grid, compared to a 1-dimensional array of nested cell objects. This data type is referred to as a **Canonical Data Grid**.
+In order to render the Data Grid in our UI, we must do some conversion to a more representational data format. We do this by using a 3-dimensional array. A 3-dimensional array of cell objects with no nesting is easily readable as a grid, compared to a 1-dimensional array of nested cell objects. This data type is referred to as a **Canonical Data Grid**, where each entry in the 3-dimensional array is a **Canonical Data Row**.
 
-Each row from the Grid Data is parsed into a Canonical Data Row as a 2-dimensional array. Each element in the Canonical Data Row array represents a **column**.
 
-For instance, take the following hierarchical **fishData**:
+Each **Hierarchy Data Row** from a **Hierarchy Data Grid** is parsed into a **Canonical Data Row** as a 2-dimensional array. Each element in the **Canonical Data Row** array represents a column.
+
+For instance, here's an example of some data we might want to load into a [Grid Instance](./grid-instances.md). Since this fishData object conforms to our [data model](./grid-data-model.md), it is considered a **Hierarchy Data Row**.
 
 ```js
 const fishData = {
@@ -62,26 +64,27 @@ const fishData = {
 };
 ```
 
-If we wanted to load this **fishData** into a [Grid Instance](./grid-instances.md), we would create a Data Grid like:
+If we wanted to use this data in a [Grid Instance](./grid-instances.md), we would create a **Hierarchy Data Grid** to contain this **Hierarchy Data Row**:
 
 ```js
 // fishData defined above
 
-const dataGrid = [
+const hierarchyDataGrid = [
   fishData,
 ];
+
 ```
 To summarize:
 
-- A Data Grid is an array containing hierarchical objects adhering to our [data model](./grid-data-model.md), like the **fishData** provided.
-- Data Grids are used to store the data for a particular grid, but are not used to render the grid in the UI. That's the purpose of the Canonical Data Grid.
+- A **Hierarchy Data Grid** is an array containing hierarchical objects adhering to our [data model](./grid-data-model.md), like the fishData provided.
+- **Hierarchy Data Grids** are used to store the data for a particular grid, but are not used to render the grid in the UI. That's the purpose of the **Canonical Data Grid**.
 
-To create a Canonical Data Grid for this Data Grid, we iterate over every row (every element in the **dataGrid** array) and create a Canonical Data Row array from it.
+To create a **Canonical Data Grid** for this **Hierarchy Data Grid**, we iterate over every row (every **Hierarchy Data Row** in the hierarchyDataGrid array) and create a **Canonical Data Row** array from it.
 
-Here's what our **fishData** row would look like converted into a Canonical Data Row:
+Here's what our fishData **Hierarchy Data Row** would look like converted into a **Canonical Data Row**:
 
 ```js
-const canonicalDataRow = [
+const fishCanonicalDataRow = [
   [ 
     { type: "criteria", body: "Fish" } 
   ],
@@ -100,13 +103,13 @@ const canonicalDataRow = [
 
 ```
 
-And, the canonical data grid which is used to render the grid in the UI:
+And, the **Canonical Data Grid** which is used to render the cells in the UI:
 
 ```js
 // canonicalDataRow defined above.
 
 const canonicalDataGrid = [
-  canonicalDataRow,
+  fishCanonicalDataRow,
 ];
 ```
 
