@@ -11,6 +11,10 @@ There are 3 main data types used to facilitate the rendering of the grid in our 
 
 Hierarchy Data Grid --> Canonical Data Grid --> Viewport Data Grid
 
+## Data Types Overview
+
+
+
 ## Hierarchy Data Grids
 
 **Hierarchy Data Grids** are a data type that are formatted as a 1-dimensional array of hierarchical objects, where each entry in the array is a **Hierarchy Data Row**.
