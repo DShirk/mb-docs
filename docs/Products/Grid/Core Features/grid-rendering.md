@@ -2,7 +2,7 @@
 
 To load a Grid Instance in our UI, we complete the following steps:
 
-- Retrieve Hierarchy Data Grid from our MongoDB backend.
+- Retrieve the Hierarchy Data Grid for the Grid Instance from our MongoDB backend.
 - Parse the Hierarchy Data Grid into a Canonical Data Grid.
 - Generate coordinates for each cell in the Canonical Data Grid.
 - Generate a Viewport Data Grid from the Canonical Data Grid based on the users' viewport size and scroll position.
@@ -11,11 +11,19 @@ To load a Grid Instance in our UI, we complete the following steps:
 
 <img src="/img/data-flow.png" />
 
+
 ## Rendering Viewport Data
 
 To render our viewport data on our front-end, we create a `<Cell />` element for each cell object in the canonical data. We then place each cell inside a container element using [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout).
 
 The css grid container uses the length of the 2D array for its column template value. The row template value is calculated
+
+:::note
+Cell column coordinates are calculated automatically by CSS Grid by passing in an array of React objects with row coordinates.
+See example:
+
+https://codesandbox.io/s/vigilant-hoover-wk86x6
+:::
 
 ### Assigning Cell Coordinates
 Each cell is also assigned a set of coordinates when it is parsed into the canonical data array. These coordinates represent the starting and stopping position of the cell within it's column. These coordinates are mapped according to [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout), which we use to place the cells on the web page.
