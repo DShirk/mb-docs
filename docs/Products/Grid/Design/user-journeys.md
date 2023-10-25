@@ -19,11 +19,12 @@ This map describes Katy using the Grid instead of Excel to meet her needs.
 
 ### User Flow: Entering diet options in the database.
 
-Katy would like to add diet information and her own notes to the database.
+Katy would like to add diet information and her own notes about fish to the database.
 
 <img src="/img/katy-user-flow-database.png"/>
 
-
 ### User Flow: Creating a chart for a client.
+
+Katy would like to create a chart for a client that wants to eat fish but also wants to avoid mercury.
 
 <img src="/img/katy-user-flow-charts.png" />
