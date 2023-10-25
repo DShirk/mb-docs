@@ -13,6 +13,13 @@ Katy would like to avoid having to create each chart manually for each client. S
 
 ## User Journey Map
 
-This map describes Katy using the Grid to fulfill her wants and needs.
+This map describes Katy using the Grid instead of Excel to meet her needs.
 
 <img src="/img/katy-user-journey.png"/>
+
+
+### User Flow: Entering diet options in database.
+
+Katy would like to add diet information and her own notes to the database.
+
+<img src="/img/katy-user-flow-database.png" height="auto" width="920" />
