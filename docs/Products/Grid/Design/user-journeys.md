@@ -28,3 +28,5 @@ Katy would like to add diet information and her own notes about fish to the data
 Katy would like to create a chart for a client that wants to eat fish but also wants to avoid mercury.
 
 <img src="/img/katy-user-flow-charts.png" />
+
+
