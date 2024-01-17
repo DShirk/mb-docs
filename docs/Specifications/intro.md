@@ -10,21 +10,18 @@ We aim to create a database system to hold these conclusions as well as the rela
 
 ## What problems are we trying to solve?
 
-Currently, our corpus of legal data is fractured and disjointed? Meaning it is difficult to look at a particular conclusion we've drawn and understand it's useage elsewhere in our corpus.
+Currently, the relationships between certain legal conclusions and their supporting information must be identified and recorded manually by Shirk Law employees.
 
+We aim to automate the answers to questions like:
+"Have I answered this question about the law before?"
 "Where else have I cited this conclusion I made?"
+"What other conclusions reference this authority?"
 
 ## What components do we need to achieve our goal?
 
-- A tool for assembling charts from these data points for presentation.
-- A tool to build pages or documents that contain charts, paragraphs of text, diagrams, etc to deliver to clients.
-- A tool to enter, update, and delete data and relationships in our database.
-
-## Extras
-
-- A web scraper to pull data from different authorities and enter it into our database.
-- A parser to chunk text from PDF/other documents and enter it into our database.
-- An AI assistant to perform grounded searches on our database.
+- A tool for assembling tables with information from our database.
+- A tool to build documents that contain deliverables such as tables, text, diagrams, images, etc to deliver to clients.
+- A tool to enter, update, and delete conclusions and the relationships between conclusions in our database.
 
 # 2. Overall Description
 
