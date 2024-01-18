@@ -14,12 +14,12 @@ By storing our legal conclusions with better detail and accuracy, we aim to be a
 - "Where else have I cited this conclusion I made?"
 - "What other conclusions reference this authority?"
 
+### What is the scope of this specification?
+
+The scope described in this current specification should be limited to the core features needed to create a minimum viable product. This MVP can be used to provide more immediate value while also gathering data and feedback that can be applied to improve future iterations.
+
 ### What components are needed to meet our goal?
 
-- A tool for assembling tables with information from our database.
+- A tool for assembling tables with information from our graph database.
 - A tool to build live documents that contain tables, text, diagrams, images, etc for delivery to clients.
-- A tool to manage our database of conclusions and their relationships to supporting information.
-
-### Scope
-
-The scope described in this document should be limited only to the core features needed to create a minimum viable product. This MVP can be used to provide more immediate value while also gathering data and feedback that can be applied to improve future iterations.
+- A tool to manage our database of conclusions and their relationships to their supporting and identifying information.
