@@ -14,32 +14,12 @@ By storing our legal conclusions with better detail and accuracy, we aim to be a
 - "Where else have I cited this conclusion I made?"
 - "What other conclusions reference this authority?"
 
-### What components are needed?
+### What components are needed to meet our goal?
 
 - A tool for assembling tables with information from our database.
 - A tool to build live documents that contain tables, text, diagrams, images, etc for delivery to clients.
 - A tool to manage our database of conclusions and their relationships to supporting information.
 
-# 2. Overall Description
+### Scope
 
-### Product Perspective
-
-A graph database stores the following information.
-
-Conclusions:
-
-Citations:
-
-Authorities:
-
-Users:
-
-### User Class and Characteristics
-
-// user needs outlined here
-
-### Assumption Dependencies
-
-# System Features
-
-# External Interface Requirements
+The scope described in this document should be limited only to the core features needed to create a minimum viable product. This MVP can be used to provide more immediate value while also gathering data and feedback that can be applied to improve future iterations.
