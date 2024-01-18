@@ -1,27 +1,24 @@
-# What are we creating?
+Shirk Law provides deliverables to clients that answer their questions about the law. Typically, these deliverables take the form of documents that include tables of information, as well as relevant citations, graphs, images, etc as needed. The information delivered can be described as a collection of legal conclusions made by Shirk Law as well other information that supports those conclusions. Supporting information can be described as references (eg, it's source of authority), as well as identifying information (eg, the state in which the conclusion is valid).
 
-A system to store legal data points and the relationships between them.
+### What are we building?
 
-## Why are we building this system?
+We aim to create a graph database system to represent our conclusions about the law with more detail and accuracy than currently possible. We also aim to create tools to greatly improve the experience of creating deliverables for Shirk Law clients that leverage this increased detail and accuracy.
 
-Shirk Law provides deliverables to clients that answer questions about the law, specific to each clients needs. Typically these deliverables take the form of documents that can include information tables created in Excel, as well as relevant citations, graphs, images, etc as needed. The information presented can be described as a amalgamation of legal conclusions made by Shirk Law, as well as the relevant citations and references to authorities that back up those conclusions.
+### What problems are we trying to solve?
 
-We aim to create a database system to hold these conclusions as well as the relationships they have to their supporting information (ie, their citations, authority, etc.) We also aim to create web-based tools to facilitate the creation of these deliverables by Shirk Law employees.
+Currently, the relationships between legal conclusions and their supporting information must be identified and recorded manually by Shirk Law employees.
 
-## What problems are we trying to solve?
+By storing our legal conclusions with better detail and accuracy, we aim to be able to automate the answers to questions like:
 
-Currently, the relationships between certain legal conclusions and their supporting information must be identified and recorded manually by Shirk Law employees.
+- "Have I answered this question about the law before?"
+- "Where else have I cited this conclusion I made?"
+- "What other conclusions reference this authority?"
 
-We aim to automate the answers to questions like:
-"Have I answered this question about the law before?"
-"Where else have I cited this conclusion I made?"
-"What other conclusions reference this authority?"
-
-## What components do we need to achieve our goal?
+### What components are needed?
 
 - A tool for assembling tables with information from our database.
-- A tool to build documents that contain deliverables such as tables, text, diagrams, images, etc to deliver to clients.
-- A tool to enter, update, and delete conclusions and the relationships between conclusions in our database.
+- A tool to build live documents that contain tables, text, diagrams, images, etc for delivery to clients.
+- A tool to manage our database of conclusions and their relationships to supporting information.
 
 # 2. Overall Description
 
