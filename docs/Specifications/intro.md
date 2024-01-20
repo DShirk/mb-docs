@@ -20,7 +20,7 @@ By storing our legal conclusions with better detail and accuracy, we aim to be a
 
 The scope described in this current specification should be limited to the core features needed to create a minimum viable product. This MVP can be used to provide more immediate value while also gathering data and feedback that can be applied to improve future iterations.
 
-### What components are needed to meet our goal?
+### What components are needed for our MVP?
 
 - The ability to assemble tables with information from our graph database.
 - The ability to build documents that contain tables, text, diagrams, images, etc for delivery to clients.
