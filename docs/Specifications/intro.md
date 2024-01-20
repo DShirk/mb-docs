@@ -8,7 +8,7 @@ We aim to create a graph database system to represent our conclusions about the 
 
 ### What problems are we trying to solve?
 
-Currently, the relationships between legal conclusions and their supporting information is identified and recorded manually by Shirk Law employees.
+Currently, the relationships between legal conclusions and their supporting information are identified and recorded manually by Shirk Law employees.
 
 By storing our legal conclusions with better detail and accuracy, we aim to be able to automate the answers to questions like:
 
