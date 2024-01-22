@@ -14,7 +14,7 @@ The ability to view and manage our database of conclusions and relationships wit
 
 ### Epic 1:
 
-The ability to assemble tables with information from our graph database.
+The ability to assemble tables from legal conclusions and their supporting information.
 
 ### Epic 2:
 
