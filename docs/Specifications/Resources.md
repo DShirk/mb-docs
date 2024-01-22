@@ -5,11 +5,8 @@
 Writing a MVP Specification:  
 https://www.ycombinator.com/blog/practical-design-mvp/
 
-Epics:  
-https://www.atlassian.com/agile/project-management/epics
-
-User Stories:  
-https://www.atlassian.com/agile/project-management/user-stories
+Initiatives, Epics, User Stories:  
+https://www.atlassian.com/agile/project-management/epics-stories-themes
 
 ### Development Resources
 
