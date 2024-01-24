@@ -94,3 +94,73 @@ Version control with comparison (relationship type “version of”)
 Ability to construct authority hierarchies that will have relationships with other content nodes and assist in weighting reliability of the conclusions
 Ability to perform natural language search and retrieve scope from graph database to return grounded results (a future release may include grounded results augmented generation of LLM summaries of findings). 
 Ability to create legal element libraries which can form the basis for presented assumptions that when selected will establish compliance or violation of a modeled law. This will form the basis for color coding the chart based on client supplied assumption’s that are prompted by the legal element hierarchy
+
+
+
+
+What are the problems that we are aiming to solve?
+
+What is the purpose of this product?
+
+What is the scope of this product?
+
+Definitions and Acronyms
+
+Assumptions/Dependencies
+
+Functional Requirements
+
+Being able to understand our body of legal data by how it's related to each other.
+
+A data repository with user extensible data model and user definable data presentation. Additional tool to ingest external documents that are stored as chunks and 
+able to be reassembled through the presentation tool for display to users. Data will be collected, curated, expanded, and queried by law firm employees and will be 
+viewed and queried by clients.   
+
+Access to any data we have ingested through query and visualization of relationships. Able to use the graph db to specify the authority hierarchy of data, which is just another 
+relationship to stored data tying it to an authority hierarchy. There may be more than one authority hierarchy, for example: U.S. Law hierarchy, User permission hierarchy, Data 
+Publication hierarchy, etc. (less certain about the last two than the first, the last two might be better as properties). 
+
+                                                                MVP includes:
+Graph db repository;  
+Visual graph presentation display tool (hopefully already exists); 
+Presentation/Editor Designer (Chart Builder); This presents node labels and properties for selection along with relationships and label properties of related nodes, then lets user specify
+  layout, whether in chart, document, blob, or other form. Stores this in a presentation node. Based on user authority, may allow user to CRUD properties, labels, new nodes, new 
+  relationships, etc. User may indicate nodes/properties/relationships/labels (NPRL) that are editable at various levels of authority through related authority nodes that may be reused 
+  for many NPRL.
+Presentation UI renders data contents according to presentation design. Exposes appropriate versions and identified properties as informed by presentation design. 
+Data Editor UI exposes additional editing features in Presentation UI. Based on user authority, may allow user to CRUD properties, labels, new nodes, new relationships, etc. 
+Version control on all nodes and relationships in Graph DB
+
+
+Grammar and spell checking 
+Formatting: paragraph, font (for words within sentence, not just whole block), numbering styles for auto-numbering
+Responsive fast search and retrieval
+Must allow editing within nodes from the presentation display (but may maximize a cell from display to give more editing space)
+Show limited or full data repository graphically: limited to nodes in selected context (i.e. Presentaiton UI) or pop out to show graph of all data with relationships that the user is 
+  authorized to see. 
+
+MVP will only store URLs to law and cases, we will not ingest primary law in initial product deployment
+Web scraping ingestion tool will be close following deployment, but not in MVP
+Graph and image support may come in later version, but should have chart and document options in MVP
+
+
+Libraries - Groups of nodes and relationships derived from similar source (E.g. Enforcement Actions, Examination Findings, Contracts, etc.).
+Authority Hierarchies - A library with the special purpose of creating a standard form of relationships that represent weighted authority of the source materials (E.g. U.S. Laws, User 
+  Access Permissions, etc.).
+Consider adoption of and visibility into SALI data tags where possible https://www.sali.org
+
+
+Assumptions/Dependencies
+
+Functional Requirements
+
+Grammar and spell checking 
+Formatting: paragraph, font (for words within sentence, not just whole block), numbering styles for auto-numbering
+Responsive fast search and retrieval
+Must allow editing within nodes from the presentation display (but may maximize a cell from display to give more editing space)
+Show limited or full data repository graphically: limited to nodes in selected context (i.e. Presentaiton UI) or pop out to show graph of all data with relationships that the user is 
+  authorized to see. 
+
+MVP will only store URLs to law and cases, we will not ingest primary law in initial product deployment
+Web scraping ingestion tool will be close following deployment, but not in MVP
+Graph and image support may come in later version, but should have chart and document options in MVP
