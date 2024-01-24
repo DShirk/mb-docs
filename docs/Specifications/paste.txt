@@ -1,0 +1,96 @@
+See comments in Excalidraw and below notes on draft specs. Let me know if you have any questions.
+
+ 
+
+Intro:
+Capitalize State when using as jurisdiction. Or use “jurisdiction” so that it is not confused with software system object state. For example in Intro paragraph when you say “ state in which the conclusion is valid”
+
+ 
+
+Goals 
+We aim to create a graph database model and web based user interface capable of deployment in any legal practice that enables a natural language  search of the firm’s enhanced knowledge base that is extensible by any of the firm’s internally and externally sourced data repositories. The system will include a user interface that allows for the capture and presentation of the law firm’s assumptions and conclusions about the law with all sources for such conclusions cited to relied upon authorities. Each assumption and conclusion will be version controlled. 
+
+ 
+
+A proof of concept of the system will be run at Shirk Law in its mortgage banking practice area, with subscription access to Shirk Law clients. However, the larger design goal is for resale to other law firms, and with additional authority hierarchies and user interface adaptation, for non-attorney uses. 
+
+ 
+
+The system will have:
+
+Internal users who are lawyers and paralegals that will:
+
+A)     Design the presentation user interface and default editable properties, labels, etc. including establishing user authority levels (if so authorized).
+
+B)     Generate conclusions from legal research and store those conclusions with citation to the resources relied upon in performing that research. These cited resources may include ingested materials or be external resources with traditional citations and/or URL links. 
+
+C)    Allow management to review employee users’ work and determine when that work is ready to publish. 
+
+D)    Organize materials into libraries that tie related documents together for subscriptions (these are groups of presentation UIs that form the basis for a subscription or for the scope of a search).  
+
+E)     Establish the scope of publication, which may: be limited to internal users, be accessible to various classes of subscribing clients, be proprietary to specific clients, etc. 
+
+F)      Future versions will allow users to identify resources for ingestion, identify key elements in representative resources and train AI tools to ingest them with automatic updates to designated libraries (E.g. regulatory enforcement actions with identified extraction elements like: parties, asserted violations, penalties, number of affected victims, etc.). 
+
+ 
+
+External users who are clients that will:
+
+A)     View the firm’s charts, memorandums, etc.;
+
+B)     Perform natural language query on content authorized for access by user/client;
+
+C)    Comment on or add notes to those viewable documents, if so authorized;
+
+D)    Edit viewable documents, if so authorized.
+
+ 
+
+These tools will greatly improve the experience of creating deliverables for the law firm’s clients that leverage this increased detail and accuracy.
+
+ 
+
+The system will have capacity to document very deeply nested relationships but can also store and manage simple concepts like the preliminary hypothesis of an advising attorney or the desired outcome of a requesting client. In this way the system can be very sparsely or extremely densely populated with a visual representation as a node graph showing the degree of research supporting the conclusion and thus supporting the level of confidence.
+
+ 
+
+A key differentiator in this system is that it will manage user extensible authority hierarchies. This is necessary because all citations do not carry the same weight of authority. All source materials will be tied to one or more authority hierarchies. For example: an authority hierarchy of U.S. law would include: the Constitution, Legislative statutes, Executive regulations and Judicial interpretations at both federal and state levels (it is more complicated than it sounds). Various authority hierarchies may be monetized as standards along with customized ingestion tools. 
+
+ 
+
+In a future release, users will be able to ingest materials from various file formats and from material scraped from web sites. This will allow law firms to expand their corpora from their own original works by ingesting external materials. There will be an interface for firm users to subscribe to data feeds, make requests through API’s, and scrape public records for ingestion at a level of detail never before accessible.
+
+ 
+
+Organizing materials into searchable libraries, allows system administrators to designate authorized users and the scope of that use. For example: data ingested from materials used in discovery phase of litigation may only be used for a single case, other data may be limited to the client engaging the firm to complete proprietary research, and other data may be developed by the firm and monetized through distribution to subscribers. 
+
+ 
+
+We also aim to create tools to greatly improve the firm’s clients’ experience in both requesting and interacting with firm deliverables. The firm’s clients will receive access to the firm’s deliverables (memos, opinions, etc.) through the firm’s website, and all deliverables will be version controlled. Clients may also subscribe to various other libraries, and benefit from visualization into the scope and authority hierarchies applicable to a particular document to increase confidence in conclusions.
+
+ 
+
+What problems are we trying to solve?
+Currently, the relationships between legal conclusions and their supporting information are stored by Shirk Law in memorandums, letters, and charts. Each addresses large questions of applications to broad fact patterns or very specific circumstances but do not store discrete conclusions of law relied upon in those materials in a manner that allows for effective reuse and version controls. By relating all stored materials to the legal a authorities relied upon in a graph database the relationships of all uses and changes in understanding in the various circumstances will be visually represented and provide for much MIT’s rapid retrieval of prior work effort and conclusions of law s as well a allow those concepts to be linked and be the basis for grounding question and answer interface for both researchers and clients. 
+
+By storing our legal conclusions with better detail and accuracy, we aim to be able to automate the answers to questions like:
+
+·         "Have I answered this question about the law before?"
+
+·         "Where else have I cited this conclusion I made?"
+
+·         "What other conclusions reference this authority?"
+
+ 
+
+What is the scope of this specification?
+What initiatives are needed for our MVP?
+In addition to the 4 already identified, add:
+
+User interface to create new nodes and relationships in the graph db.
+User interface to design a presentation in charts or memorandums/letters of identified data (user interface) by selecting nodes and relationships for inclusion and designating their position in a chart or document style display. This will also allow authorized user to specify properties, labels, etc. visible to employee users when compiling the material that populates the nodes included in the presentation. In other words, these presentation designs are layout templates that have a read and edit version.
+Ability for user to specify new nodes for presentation (e.g. chart cells) that do not yet exist in the db, but will exist when chart is completed and need placeholder for employees to know that they are supposed to reach conclusions where blank cells exist.
+Version control with comparison (relationship type “version of”)
+Ability to construct authority hierarchies that will have relationships with other content nodes and assist in weighting reliability of the conclusions
+Ability to perform natural language search and retrieve scope from graph database to return grounded results (a future release may include grounded results augmented generation of LLM summaries of findings). 
+Ability to create legal element libraries which can form the basis for presented assumptions that when selected will establish compliance or violation of a modeled law. This will form the basis for color coding the chart based on client supplied assumption’s that are prompted by the legal element hierarchy
