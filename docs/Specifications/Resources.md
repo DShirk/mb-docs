@@ -8,6 +8,9 @@ https://www.ycombinator.com/blog/practical-design-mvp/
 Initiatives, Epics, User Stories:  
 https://www.atlassian.com/agile/project-management/epics-stories-themes
 
+Charts Use Case:
+https://www.jdsupra.com/legalnews/proposed-state-privacy-law-update-7181780/?origin=CEG&utm_source=CEG&utm_medium=email&utm_campaign=CustomEmailDigest&utm_term=jds-article&utm_content=article-link
+
 ### Development Resources
 
 PDF ingestion into Neo4j with OpenAI query:  
