@@ -96,12 +96,11 @@ Ability to perform natural language search and retrieve scope from graph databas
 Ability to create legal element libraries which can form the basis for presented assumptions that when selected will establish compliance or violation of a modeled law. This will form the basis for color coding the chart based on client supplied assumption’s that are prompted by the legal element hierarchy
 
 
-
-
 What are the problems that we are aiming to solve?
 
 What is the purpose of this product?
 
+A data repository with user extensible data model and user definable data presentation. Additional tool to ingest external documents that are stored as chunks and 
 What is the scope of this product?
 
 Definitions and Acronyms
@@ -112,7 +111,6 @@ Functional Requirements
 
 Being able to understand our body of legal data by how it's related to each other.
 
-A data repository with user extensible data model and user definable data presentation. Additional tool to ingest external documents that are stored as chunks and 
 able to be reassembled through the presentation tool for display to users. Data will be collected, curated, expanded, and queried by law firm employees and will be 
 viewed and queried by clients.   
 
