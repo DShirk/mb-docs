@@ -6,11 +6,14 @@ Initiatives are collections of Epics that drive towards a common goal.
 
 ### Epic 1:
 
-A graph database system to store legal conclusions, assumptions, and their relationships to supporting information.
+A database system to store legal conclusions, assumptions, and their relationships to their supporting information.
 
 ### Epic 2:
 
-The ability to view and manage our database of conclusions, assumptions, and relationships with their supporting and identifying information.
+The ability to view, manage, and expand our database.
+
+User Story:
+Adding a new conclusion to our corpus.
 
 User Story:
 Viewing the authority hierarchy for a conclusion to determine it's confidence.
@@ -19,18 +22,20 @@ Viewing the authority hierarchy for a conclusion to determine it's confidence.
 
 ### Epic 1:
 
-The ability to assemble tables from legal conclusions and their supporting information.
+The ability to analyze and display our corpus data in a table deliverable.
 
 ### Epic 2:
 
-The ability to build live presentation pages that contain tables, text, images, etc for delivery to clients.
+The ability to create live presentation pages of deliverables for clients.
 
 User Story:
 The ability to save and re-use presentation templates.
 
-### Epic 3:
+User Story:
+Adding a table to a presentation page.
 
-The ability to dynamically evaluate the confidence in certain conclusions (based on their authority hierarchy)
+User Story:
+Adding an abstract to a presentation page to summarize what's being presented.
 
 ### Epic 4:
 
@@ -38,24 +43,26 @@ Improved corpus search and filtering ability via natural language queries.
 
 ### Epic 6:
 
-The ability for management to assign work to be done on the corpus and review it before it's accepted.
+The ability for firm employees to collaboratively improve the corpus.
+
+User Story: Assigning work to a firm employee and reviewing it before it's added.
 
 ## Initiative 3: Allow client subscription to our corpus.
 
 ### Epic 1:
 
-The ability to group related deliverables together for client subscription.
+The ability to group related presentations together into libraries for client subscription.
 
 ### Epic 2:
 
-The ability to grant granular client access to our corpus.
+The ability to grant granularly-scoped client access to our corpus.
 
 ## Initiative 4: Dynamically grow and update our corpus.
 
 ### Epic 1:
 
-The ability to batch parse conclusions and assumptions from documents and add them to our corpus.
+The ability to batch parse suitable information from documents (.pdf, etc) and add them to our corpus.
 
 ### Epic 2:
 
-The ability to automatically scrape, parse, and update conclusions and assumptions in our corpus from their online sources.
+The ability to automatically update information in our corpus by referencing it's online source(s).

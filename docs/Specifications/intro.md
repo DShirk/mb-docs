@@ -24,6 +24,8 @@ In addition:
 
 The scope described in this current specification should be limited to the core features needed to create a minimum viable product. This MVP can be used to provide more immediate value while also gathering data and feedback that can be applied to improve future iterations.
 
+Our MVP should be the smallest set of features that will provide value for the firm when shipped. The scope described in this current specification should remain limited to the features
+
 ### What Initiatives are needed for our MVP?
 
 :::note
