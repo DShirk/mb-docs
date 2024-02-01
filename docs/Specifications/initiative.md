@@ -1,6 +1,10 @@
 # Initiatives
 
-Initiatives are collections of Epics that drive towards a common goal.
+[Initiatives](https://www.atlassian.com/agile/project-management/epics-stories-themes) are collections of Epics that drive towards a common goal.
+
+[Epics](https://www.atlassian.com/agile/project-management/epics) are large bodies of work that can be broken down into a number of smaller tasks (called stories).
+
+[Stories](https://www.atlassian.com/agile/project-management/user-stories), also called “user stories,” are short requirements or requests written from the perspective of an end user.
 
 ## Initiative 1: Build a corpus of legal conclusions.
 
@@ -37,25 +41,25 @@ Adding a table to a presentation page.
 User Story:
 Adding an abstract to a presentation page to summarize what's being presented.
 
-### Epic 4:
-
-Improved corpus search and filtering ability via natural language queries.
-
-### Epic 6:
+### Epic 3:
 
 The ability for firm employees to collaboratively improve the corpus.
 
 User Story: Assigning work to a firm employee and reviewing it before it's added.
 
+### Epic 4:
+
+Improved corpus search and filtering ability via natural language queries.
+
 ## Initiative 3: Allow client subscription to our corpus.
 
 ### Epic 1:
 
-The ability to group related presentations together into libraries for client subscription.
+The ability to grant granularly-scoped client access to our corpus.
 
 ### Epic 2:
 
-The ability to grant granularly-scoped client access to our corpus.
+The ability to group related presentations together into libraries for client subscription.
 
 ## Initiative 4: Dynamically grow and update our corpus.
 
