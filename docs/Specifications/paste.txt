@@ -162,3 +162,103 @@ Show limited or full data repository graphically: limited to nodes in selected c
 MVP will only store URLs to law and cases, we will not ingest primary law in initial product deployment
 Web scraping ingestion tool will be close following deployment, but not in MVP
 Graph and image support may come in later version, but should have chart and document options in MVP
+
+============================================================================================================
+
+Wants to build a proof of concept.
+Figure out a graph model that will support that.
+
+Minimum viable product is the ability to track versions on a graph database that contains state licensing material that we will provide at some point in time?
+> we can decide what the input mechanism is.
+> has to be able to have version control at the cell level?
+> specifying the chart layout? pick from certain things they want to include or not include in the chart.
+
+David said he had 4 people coming to him to get the state charts in the last two months.
+
+What he wants to build is an interface where we have all the elements of the law, where the user picks what they're doing or not doing.
+> When we store this legal elements, there will be a boolean flag to ask a yes/no question.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+scope to state licensing charts
+
+Need to be able to full text search.
+
+Store state licensing information, don't have any federal information for the first release.
+
+Have all the jurisdictions.
+
+Have a number of different license classifications or license types.
+
+Business channels like retail, wholesale, correspondent, broker, lead gen.
+
+Identify the relevant scope of the law. The law has elements, those elements are necessary for the law to be in effect. Things that are going to have you rquire a license or exempt you from a license.
+
+Definitions:
+Trigger Elements - elements of the law that determine whether or not it applies.
+Exemptions - Restaurantuer sells his house, he's not a mortgage firm so he's not subject to real estate/mortgage law.
+
+THE WHAT!!!!! BOOOM:
+We're answering whether or not a client needs a license depending on their criteria/who they are, and delivering that answer to them with our justification.
+> A license to what? Is that some of the clients criteria?
+
+We have to ask what jurisdictions (states), and then we figure out the rules for each state, and then ask the clients the questions based on the rules for each state.
+
+What states/what business activity are you doing?
+> And are we asking questions about a company, a branch, an individual? etc?
+
+Our data model should work for jaywalking and bank robbery.
+
+3 classifications of license:
+Company license - ie, you need a different company license for headquarters vs a branch location.
+Branch license
+Orginator license
+
+For example, to jaywalk:
+You have to be a pedestrian.
+> What's a pedestrian? Someone who is walking and not in a vehicle. A skateboard is not a vehicle unless it is motorized.
+> What consitutes a street? A highway (residential maybe) that's on public property.
+
+> Exemption: You can cross in the middle of the street if there is a crosswalk.
+
+> Can you get ticket for jaywalking in a supermarket parking lot? No, because an element of the law requires that jaywalking must take place on public property.
+
+We need the ability to classify the elements of the law across states.
+
+Ie, in one state it may be called 'jaywalking' and in another state it might be called 'improper use of a roadway'.
+
+We need to be able to classify these things together even if they are different.
+
+At some point we need to query this whole set.
+
+The assumptions are the client answers to a series of questions that constitute all of the elements all the exemptions.
+
+> Where "all" means the superset of elements and exemptions for the included states in the chart.
+
+The superset of elements and exemptions would be presented to them so that when they answer those questions, we can apply those answers in the determination of whether a license is required or not.
+ 
+> The grounds being the elements and exemptions.
+
+The exemptions can have elements themselves.
+
+MVP:
+
+Limited in scope to creating and delivering state charts.
+
+The What:
+A system to determine whether or not a client needs a particular license depending on their circumstances, and to deliver that answer to them with justification.
+
+The clients circumstances might include their jurisdiction (ie the state they're operating in), if they're a business or an individual, etc. 
+The answers to these questions may be dynamic, like filling out information on a dynamic form where certain inputs are only necessary based on the answers provided in other inputs.
+
+States have laws that relate to different types of licenses. These laws have elements and exemptions that determine whether or not they will apply to our clients.
+
+Elements (of the law): Conditions that determine how the law is applied.
+Exemptions (of the law): Clauses that exempt the application of the law under certain circumstances.
+
+Questions:
+How will we determine whether or not this MVP is valuable?
+How much runway do we have to complete this goal?
