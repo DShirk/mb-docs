@@ -259,6 +259,32 @@ States have laws that relate to different types of licenses. These laws have ele
 Elements (of the law): Conditions that determine how the law is applied.
 Exemptions (of the law): Clauses that exempt the application of the law under certain circumstances.
 
+Licenses:
+3 types of licenses:
+Originator License - license to make and sell mortgages.
+Company License - license to do business in a particular state/location.
+Branch License - license to engage in business outside the location stated in the company license.
+
+Assumptions:
+The circumstances of the clients situation which we'll use to determine what kind of license they need. Ie are they an individual or a company, do they have 
+multiple locations, etc.
+
+The Law:
+Made up of elements and exemptions that describe how licensing works in different states for different entities.
+
+Entities - who you are. A person, a business, etc.
+Jurisdictions - states (for the purpose of the MVP)
+Elements - clauses that describe how the law is applied. eg, 
+
+Is it fair to say our clients will need either an originator license, a company license, a branch license, or no license? Are there any other possibilies?
+
+So basically:
+
+User wants to know what license they need.
+
+1. They go to our website, the website asks for their assumptions, and it spits out a chart laying out what license they need and our reasoning behind it automatically.
+2. They call us up/get in contact with us somehow, we figure out what their assumptions are, we create a chart based on their assumptions, and put it up on our website for them to view.
+
 Questions:
 How will we determine whether or not this MVP is valuable?
 How much runway do we have to complete this goal?
