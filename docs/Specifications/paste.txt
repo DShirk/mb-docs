@@ -288,3 +288,25 @@ User wants to know what license they need.
 Questions:
 How will we determine whether or not this MVP is valuable?
 How much runway do we have to complete this goal?
+
+Email/Teams Message:
+
+Hi David,
+
+One thing I want to clarify is, for our MVP what will the user interaction be for clients recieving information about what licensing rules/regulations apply to them?
+
+Will it be:
+
+A. They go to our website, our UI prompts them to enter their assumptions, and it spits out a chart laying out what license they need and our reasoning behind it.
+B. We ask the clients directly what their assumptions are, create a chart with a chart builder UI based on those assumptions, and put it up on our website for them to view.
+
+We've talked about clients having direct access to our data (A) but also about firm employees creating charts to present to clients (B). In one case we need to be able to 
+automatically generate the charts and in the other we don't, which will change the data model. 
+
+hmmmm.
+
+================================
+
+Hi David,
+
+Can we boil it down to 'Do I need a branch license, originator license, company license, or no license?'
