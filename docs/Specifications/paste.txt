@@ -202,7 +202,7 @@ Trigger Elements - elements of the law that determine whether or not it applies.
 Exemptions - Restaurantuer sells his house, he's not a mortgage firm so he's not subject to real estate/mortgage law.
 
 THE WHAT!!!!! BOOOM:
-We're answering whether or not a client needs a license depending on their criteria/who they are, and delivering that answer to them with our justification.
+We're answering whether or not a client needs a license depending on their criteria/who they are and the jurisdiction they are in, and delivering that answer to them with our justification.
 > A license to what? Is that some of the clients criteria?
 
 We have to ask what jurisdictions (states), and then we figure out the rules for each state, and then ask the clients the questions based on the rules for each state.
@@ -213,7 +213,7 @@ What states/what business activity are you doing?
 Our data model should work for jaywalking and bank robbery.
 
 3 classifications of license:
-Company license - ie, you need a different company license for headquarters vs a branch location.
+Company license - david pointed out there might be two types of company license, you need a different company license for headquarters vs a branch location.
 Branch license
 Orginator license
 
@@ -232,9 +232,9 @@ Ie, in one state it may be called 'jaywalking' and in another state it might be 
 
 We need to be able to classify these things together even if they are different.
 
-At some point we need to query this whole set.
+At some point we need to query this whole set. -> ???
 
-The assumptions are the client answers to a series of questions that constitute all of the elements all the exemptions.
+The assumptions are the client answers to a series of questions that constitute all of the elements all the exemptions. => Ok, so we gather the assumptions and kind of use them as our query.
 
 > Where "all" means the superset of elements and exemptions for the included states in the chart.
 

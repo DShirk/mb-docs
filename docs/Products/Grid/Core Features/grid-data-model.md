@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Company insights are stored as NoSQL data in MongoDB. The data is structured as a series of **criteria** leading to specific **conclusions**. Or, a hierarchical set of **questions**, leading to an **answer** or **set of answers**. Both criteria and conclusions exist as objects.
 
-Any NoSQL object that adheres to this data model can represent a single row or column in the grid. We call these objects **Hierarchy Data**.
+Any NoSQL object that adheres to this data model can represent a single branching row (or column, if desired) of cells in the grid. We call these objects **Hierarchy Data**.
 
 ### Hierarchy Data
 
