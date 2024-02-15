@@ -21,3 +21,6 @@ https://medium.com/@basics.machinelearning/discover-docllm-the-new-llm-from-jpmo
 
 PDF ingestion with unstructured.io:  
 https://medium.com/@yu-joshua/integrating-unstructured-io-with-neo4j-auradb-to-build-document-knowledge-graph-8b375d22ee2b
+
+Build Knowledge Graphs from Text with LLM:
+https://medium.com/@mahimairaja/build-knowledge-graph-from-textdata-using-langchain-under-2min-ce0d0d0e44e8
