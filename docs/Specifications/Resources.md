@@ -24,3 +24,6 @@ https://medium.com/@yu-joshua/integrating-unstructured-io-with-neo4j-auradb-to-b
 
 Build Knowledge Graphs from Text with LLM:
 https://medium.com/@mahimairaja/build-knowledge-graph-from-textdata-using-langchain-under-2min-ce0d0d0e44e8
+
+RAG Search without vector database:
+https://pub.towardsai.net/how-to-do-rag-without-vector-databases-45fd4f6ced06
