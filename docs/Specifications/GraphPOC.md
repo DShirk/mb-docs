@@ -20,13 +20,13 @@ No ability to re-arrange cells through our spreadsheet interface.
 
 We split our graph nodes into two categories: nodes that wil represent cells in our spreadsheets, or nodes that will represent any other data we wish to store or link to.
 
-Nodes representing cells should conform to a decision tree structure, where the relationships between them cascade in one direction and are identified as AND, OR, NAND, or NOR. Cell nodes can point to multiple other nodes but can only have one node pointing at them. Nodes not representing cells will be able to use the full flexibility of the graph data structure, but will not dictate cell rendering behavior.
+Nodes representing cells should conform to a decision tree structure, where the relationships between them cascade in one direction and are identified as AND, OR, NAND, or NOR. Cell nodes can point to multiple other cell nodes but can only have one cell node pointing at them. Nodes not representing cells will be able to use the full flexibility of the graph data structure, but will not dictate cell rendering behavior.
 
 ![law schema](/img/law-schema.png)
 
 ### Option 2: Manual Cell Placement
 
-Nodes will be linked to corresponding cells in the spreadsheet and their content will update at the same time. Cell contents will be able to update when the data changes.
+Nodes will be linked to corresponding cells in the spreadsheet and their content will update at the same time. Cell contents will be able to update when the data changes. However, each cell will have to have their position and size assigned automatically.
 
 Pros:  
 Full flexibility to store data as we see fit.  
