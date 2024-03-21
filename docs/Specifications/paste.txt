@@ -178,9 +178,6 @@ David said he had 4 people coming to him to get the state charts in the last two
 What he wants to build is an interface where we have all the elements of the law, where the user picks what they're doing or not doing.
 > When we store this legal elements, there will be a boolean flag to ask a yes/no question.
 
-
-
-
 -----------------------------------------------------------------------------------------------------------------------------
 
 scope to state licensing charts
