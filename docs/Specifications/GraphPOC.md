@@ -11,7 +11,7 @@ In a spreadsheet where cells represent objects, relationships between cells are 
 ### Option 1: Automated Cell Placement
 
 Pros:  
-Relationships between objects are accurately reflected between the database and spreadsheets.
+Relationships between objects are accurately reflected between the database and spreadsheets.  
 Spreadsheets can be created automatically and accurately given set parameters, and can fully update when the corresponding data in the database updates.
 
 Cons:  
@@ -44,7 +44,7 @@ Say we have a schema like:
 We could assign (x,y) coordinate preferences to the nodes in the schema like:
 ![manual schema coords](/img/manual-schema-coords.png)
 
-Then we could use the coordinate preferences for each node to render a spreasheet like:
+Then we could use the coordinate preferences for each node to render a spreadsheet like:
 ![manual schema cells](/img/manual-schema-cells.png)
 
 However, since the coordinate preferences are being used to determine cell placement, changing the relationship structure will not affect
