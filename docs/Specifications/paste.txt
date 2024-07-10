@@ -313,3 +313,47 @@ https://excalidraw.com/#room=2e3033a2a87ff884ad8c,UWxSUGxJWoN7eubnZNCZLA
 
 Previous session:
 https://excalidraw.com/#room=dd72f361db7ab00f244d,v7DO2TCIZvQH9m2xkqRNng
+
+Hi David,
+
+I need you to write up a design brief for me so that I can create a plan to deliver our charts product. It'll allow me to turn our wireframes into a tight specification and make good delivery estimates. It can just be a page or two of rough outline or as detailed as you'd like, but it needs to answer a few main questions well. Here's what it should include:
+
+Timeline (how long do we have to make it)
+Who are the users
+Why the product will be valuable to the different users
+Examples of use
+
+The brief should be written from a design perspective, avoiding technical descriptions of how the product should work behind the scenes. It should outline only what we'll be aiming to deliver in the chosen timeline.
+
+For your reference here are my notes from our previous call where we went over some of these questions:
+
+"""
+Who are the users:
+
+Firm Clients
+Firm Employee (writer)
+Firm Employee (reviewer)
+
+Why they want to use it/why it's valuable to them:
+
+Building resources for others to consume. Documenting our path to collecting this data, which
+are the citations and end notes, which may have links to original sources.
+Documenting sources to questions that are going to be identified by their relationship to
+the law.
+
+User is going to document the relationship to the source, and be able to structure the relationship
+between the various jurisdictions, regulators, laws, etc. that might be applicable to a particular question.
+Be able to create a schema to support the relationship model that that primary source has (that they just created above)
+Be able to create a series of questions. Where the questions are the criteria, to get to the conclusions (answers).
+Be able to present this in a grid that allows them to edit the answers to the questions and to establish assumptions and scope that accompany those answers. Assumptions and scope may be part of the schema.
+
+Once the answers are given (the conclusions) the author is going to flag that question, the reviewer is going to look at it and approve it.
+
+Once it's published, the clients can go in with the questions they want answered and get answers from the published data.
+"""
+
+I'll work with you to make sure the brief is realistic and descriptive enough for me to create a good product specification and deliver on.
+
+Thanks! Let me know if you have any questions,
+
+Mitch
