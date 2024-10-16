@@ -1,0 +1,13 @@
+My apologies, I could have been clearer on where we were. I wrote these requirements on my own time after reading through the web scraper chat history. I was under the assumption that you wanted me to get the web scraper working and give you an estimate on how long I think it would take to do so.
+
+Having now read through the chat history and code for the scraper, I can see that the solution ChatGPT created has many issues with how it's written, including security concerns. I'm certain there are other issues or bugs in this code that aren't as readily apparent as well. One big inefficiency is that this solution is written in Python, which I'm slower to work with as I have less experience in it compared to JavaScript. We also have a JavaScript-based web scraping system already built for the APOR tool that we can piggyback off of. There may very well be a good reason to write this in Python or to set up new infrastructure to run this that I can't see, even if it will take considerably longer. This is why I believe having a good understanding of what the requirements are is important.
+
+If you just wanted me to see if this ChatGPT code works out of the box with a little adjusting, we already have our answer - it can't. It will require a significant effort to fully understand, debug and rewrite this code to get it working as intended, certainly more than two days worth. When the docker image failed to build for me and I asked ChatGPT to fix the errors, I could see pretty clearly that the answers it was giving were incorrect. I felt that it would be wasted time to try and coax ChatGPT into giving me the right answer when it would be faster to just go and fix it myself. I also felt fixing this problem myself and moving on to the next would essentially kick the can down the road to the other issues described above, which is why I asked about the requirements.
+
+To me, if we want to build this web scraper it makes more sense to have me generate a new JavaScript solution that can integrate with our existing infrastructure, with good requirements for me to evaluate the AI-generated code against. If our goal is to see how well ChatGPT can work for rapid prototyping, I think this would be a fantastic test. However, I haven't started on this, and I'm arriving at this opinion based on what I think the requirements are for this scraper and what I think your goals are for this project.
+
+Ultimately, I'm happy to try whichever approach to this you would like. I just need to know what you'd like me to do given this feedback.
+
+Best,
+
+Mitch
